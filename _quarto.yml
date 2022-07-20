@@ -17,6 +17,7 @@ book:
   chapters:
     - index.qmd
     - intro.qmd
+    - register_and_settings.qmd
     - references.qmd
     - projects.qmd
 
