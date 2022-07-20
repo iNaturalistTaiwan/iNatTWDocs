@@ -1,10 +1,11 @@
 project:
   type: book
+  output-dir: docs
 
 book:
   title: "愛自然(iNaturalist)說明文件"
   author: "Cheng-Tao Lin, Yu-Ting He, Chu-Chia Kuo, Li-Yue Wu"
-  favicon: images/inattw.png
+  favicon: images/iNaturalistTW_favicon.png
   page-navigation: true
   language: zh
   number-depth: 2
@@ -17,20 +18,21 @@ book:
     - index.qmd
     - intro.qmd
     - references.qmd
+    - projects.qmd
 
 bibliography: references.bib
 
 format:
   html:
     theme: simplex
-		code-copy: true
-		fig-responsive: true
-		citations-hover: true
-		comment-hover: true
+    code-copy: true
+    fig-responsive: true
+    citations-hover: true
+    comment-hover: true
   pdf:
-		header-includes:
-    - \usepackage{fontspec} # 使用 fontspec package
-    - \usepackage{xeCJK}    # 使用 xeCJK package
-    - \setCJKmainfont{Songti TC}
-		documentclass: scrreprt
+    header-includes:
+      - \usepackage{fontspec} # 使用 fontspec package
+      - \usepackage{xeCJK}    # 使用 xeCJK package
+      - \setCJKmainfont{Songti TC} # 字型
+    documentclass: scrreprt
 
